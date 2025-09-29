@@ -23,7 +23,7 @@ This project is built with **HTML, CSS, and JavaScript**. Optionally, it can be 
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/online-quiz-app.git
+git clone https://github.com/snehavarmak/online-quiz-app.git
 
 ### 2. Open the project
 
