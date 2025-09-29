@@ -1,0 +1,150 @@
+:root {
+  --bg: #F9FAFB;           /* Page background */
+  --card: #EDE9FE;         /* Card background */
+  --accent: #8B5CF6;       /* Primary / Accent */
+  --accent-light: #A78BFA; /* Lighter accent for hover/active */
+  --success: #22C55E;      /* Success (correct) */
+  --danger: #EF4444;       /* Danger (wrong) */
+  --text: #1F2937;         /* Text Primary */
+  --muted: #6B7280;        /* Text Muted */
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #EDE9FE; /* changed to lavender */
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+/* Card styles */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.08);
+  margin-bottom: 20px;
+  transition: 0.3s;
+  color: var(--text);
+}
+
+.card:hover {
+  background: var(--accent-light);
+  color: var(--text);
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  margin-top: 4px;
+  color: var(--text);
+  background: #fff;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Choices */
+.choices {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: grid;
+  gap: 12px;
+}
+
+.choices li {
+  background: #F3F4F6; /* very light gray */
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--text);
+  border: 1px solid #E5E7EB;
+}
+
+.choices li:hover {
+  background: var(--accent-light);
+  color: #fff;
+}
+
+.choices li.correct {
+  background: var(--success);
+  color: #fff;
+}
+
+.choices li.wrong {
+  background: var(--danger);
+  color: #fff;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: var(--accent-light);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--text);
+}
+
+.feedback {
+  min-height: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feedback.correct {
+  color: var(--success);
+}
+
+.feedback.wrong {
+  color: var(--danger);
+}
